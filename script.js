@@ -123,19 +123,27 @@ function generatePassword(length, lower, upper, number, special){
 
 
 
-
+function checkboxChecker(id){
+  var checkBox = document.getElementById(id);
+  if (checkBox.checked === true){
+    var x = true
+  }else{
+    x = false
+  }
+  return x
+}
 
 // Write password to the #password input
 function writePassword() {
   var x = parseInt(document.getElementById("myNumber").value);
 
-  var lowerBool = document.getElementById("lower");
-  var upperBool = document.getElementById("upper");
-  var numberBool = document.getElementById("numbers");
-  var specialBool = document.getElementById("special")
+  var lowerBool = checkboxChecker("lower");
+  var upperBool = checkboxChecker("upper");
+  var numberBool = checkboxChecker("numbers");
+  var specialBool = checkboxChecker("special");
 
-  var password = generatePassword(x, true, true, true, true);
-  document.getElementById('password').value = password
+  var password = generatePassword(x, lowerBool, upperBool, numberBool, specialBool);
+  document.getElementById('password').value = password;
 }
 
 // Add event listener to generate button
