@@ -126,9 +126,9 @@ function generatePassword(length, lower, upper, number, special){
 function checkboxChecker(id){
   var checkBox = document.getElementById(id);
   if (checkBox.checked === true){
-    var x = true
+    var x = true;
   }else{
-    x = false
+    var x = false;
   }
   return x
 }
