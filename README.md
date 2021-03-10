@@ -7,4 +7,4 @@ This git repository contains all of the HTML, CSS, and Javascript for a random p
 link: https://noahhelton98.github.io/Password_Generator/
 
 
-![screen shot of password generator](Password_Generator/img/ScreenShot.png)
+![screen shot of password generator](assets/img/ScreenShot.png)
