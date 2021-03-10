@@ -1,5 +1,3 @@
-// Assignment Code
-var generateBtn = document.querySelector("#generate");
 
 
 // Array of special characters to be included in password
@@ -145,6 +143,9 @@ function writePassword() {
   var password = generatePassword(x, lowerBool, upperBool, numberBool, specialBool);
   document.getElementById('password').value = password;
 }
+
+// Assignment Code
+var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
